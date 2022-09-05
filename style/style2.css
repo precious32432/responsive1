@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background: url('../asset/img/background.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* background-color: lightcyan; */
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.firstbox {
+    width: 100%;
+    height: 120px;
+    /* background: white; */
+    margin: 7px;
+    display:flex; 
+    flex-direction: row;
+    justify-content: start;
+
+}
+.firstbox .box1 {
+    /* background-color:; */
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: start;
+
+}
+.firstbox .box1 .text{
+    padding: 10px 2px;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+}
+.firstbox .box1 img{
+    width: 25px;
+    height: 25px;
+    margin: 8px 3px;
+}
+.secondbox {
+    width: 100%;
+    /* height: 350px; */
+    /* background-color: white; */
+    margin: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.secondbox .box2 {
+    display: flex;
+    /* background-color: white; */
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.secondbox .box2 img{
+    width: 100%;
+    height: 300px;
+}
+.secondbox .box3 {
+    /* background-color: white; */
+    width: 100%;
+    /* height: 350px; */
+    text-align: center;
+    color: white;
+}
+.secondbox .box3 h3{
+    line-height: 1.3em;
+}
+.secondbox .box3 p {
+    /* margin-left: 40px; */
+    /* margin-right: 40px; */
+}
+.secondbox .box3 button {
+    padding: 8px;
+    width: 180px;
+    border-radius: 20px;
+    color: purple;
+    font-weight: bolder;
+}
+.thirdbox {
+    width: 100%;
+    /* height: 300px; */
+    /* background-color: white; */
+    margin: 7px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+.thirdbox .box4 {
+    /* background-color: white; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* height: 170px; */
+}
+.thirdbox .box4 span {
+     border: 1px solid white;
+    border-radius: 30px;
+    margin: 5px;
+    /* width: 100px; */
+    /* height: 100px; */
+    padding:6px;
+    
+}
+.thirdbox .box4 img {
+    width: 20px;
+    height: 14px;
+   
+}
+
+/* .fourthbox {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    margin: 7px;
+} */
+
+
+/* .fifthbox {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    margin: 7px;
+} */
+
+/* desktop view */
+@media screen and (min-width: 1024px){
+.secondbox{
+    flex-direction: row;
+}
+.container{
+    padding: 0px 20px 0px 20px;
+}
+.secondbox .box3 {
+    text-align: left;
+    margin-top: 30px;
+}
+.secondbox .box3 p {
+    line-height: 1.3em;
+}
+.thirdbox .box4 {
+    justify-content: right;
+}
+}
